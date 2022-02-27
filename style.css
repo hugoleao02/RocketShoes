@@ -1,0 +1,135 @@
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      
+}
+
+li {
+      list-style-type: none;
+}
+
+:root {
+      --button: #FF0000;
+      --main-background:  #C4C4C4;
+      --background: #E5E5E5;
+      --text: #000;
+      --footer: #000;
+      --text-description: #9C9696;
+}
+
+html{
+      background: var(--background);
+      font-family: 'Roboto', sans-serif;
+      color: var(--text);
+      
+}
+
+/*-------------- Menu --------------- */
+.navbar{
+     position: absolute;      
+}   
+.navbar ul{
+      display: flex;
+      justify-content: space-between; 
+      width: 77rem;
+      margin: 2.5rem 2.438rem;
+}
+.navbar ul li{
+      font-size: 1.5rem ;
+      font-weight: 700;
+      align-items: center;
+}
+.navbar ul li a{
+      color: var(--text);
+}
+.navbar ul li input{
+      padding-left: 35px;
+      border: none;
+      border-radius: 5px;
+      width: 13.75rem;
+      height: 2.2rem;
+}
+
+.busca i{
+      position: absolute;
+      padding:10px 5px;
+     
+}
+
+/*--------------MAIN--------------- */
+#main{
+      display: flex;
+      justify-content: space-between;
+
+}
+
+/*--------------DESCRIÇÃO--------------- */
+#description{
+      width: 44%; 
+      height: 100vh;
+}
+#description .content{
+      position: relative;
+      width: 22.313rem;
+      height: 33.313rem;
+      left:6rem;
+      top: 11.875rem;
+}
+#description .content h1{
+      font-size: 3.75rem;
+     
+}
+#description .content h2{
+      margin-top: 1rem;
+      font-size: 2.5rem;
+}
+#description .content p{
+      
+      font-size: 1rem;
+      line-height: 1rem;
+      color: var(--text-description);
+}
+#description .content button{
+      margin-top: 1rem;
+      border: none;
+      border-radius: 2px;
+      background: var(--button);
+      padding: 2rem 4rem 2rem 4rem;
+      color: white;    
+
+    
+}
+
+/*--------------IMAGES--------------- */
+#image{
+      display: flex;
+
+      width: 56%;
+      background: var(--main-background);
+}
+#image .preview img{
+      width: 37.313rem;
+      height: 31.926rem;
+      margin: 10.375rem 7rem 14.75rem 7rem;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+}
+/*---------CARDS--------------- */
+.cards{
+      display: flex;
+}
+.card1 {
+      width: 269.51px;
+      height: 182.8px;
+      left: 558px;
+      top: 682.58px;
+}
+.card2{
+      
+
+}
+.card3{
+    
+     
+}
