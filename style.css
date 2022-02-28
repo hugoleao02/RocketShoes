@@ -27,24 +27,24 @@ html{
 }
 
 /*-------------- Menu --------------- */
-.navbar{
+.menu{
      position: absolute;      
 }   
-.navbar ul{
+.menu ul{
       display: flex;
       justify-content: space-between; 
       width: 77rem;
       margin: 2.5rem 2.438rem;
 }
-.navbar ul li{
+.menu ul li{
       font-size: 1.5rem ;
       font-weight: 700;
       align-items: center;
 }
-.navbar ul li a{
+.menu ul li a{
       color: var(--text);
 }
-.navbar ul li input{
+.menu ul li input{
       padding-left: 35px;
       border: none;
       border-radius: 5px;
@@ -104,32 +104,29 @@ html{
 
 /*--------------IMAGES--------------- */
 #image{
-      display: flex;
-
       width: 56%;
       background: var(--main-background);
 }
-#image .preview img{
-      width: 37.313rem;
-      height: 31.926rem;
-      margin: 10.375rem 7rem 14.75rem 7rem;
+
+#image .preview .prevImg{
+      width: 552px;
+      margin-top: 8rem;
+      margin-left:8rem ;
+      height: 405.82px;
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
 }
 /*---------CARDS--------------- */
 .cards{
+      width: 95%;
       display: flex;
+      gap: 2rem;
+      margin-left:1rem;
+      margin-right:1rem;
+      margin-bottom: 1rem;
 }
-.card1 {
-      width: 269.51px;
-      height: 182.8px;
-      left: 558px;
-      top: 682.58px;
-}
-.card2{
-      
 
-}
-.card3{
+#image .preview .cards .card img{
     
-     
+      width: 100%;
+      height: 100%;
 }
