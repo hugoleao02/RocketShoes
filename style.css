@@ -131,12 +131,15 @@ html{
 }
 /*---------FOOTER--------------- */
 footer{
-      display: flex;  
+      display: grid;
+      grid-template-columns:1fr 1fr 1fr 1fr 1fr 2fr;
+      align-items: center;
       background: var(--background);  
     
 }
 footer a{
-      padding: 4.396rem 4.200rem;
+     
+      padding: 4.396rem 3.8rem;
       color: var(--text);
 }
 footer .card-footer{
@@ -149,7 +152,14 @@ footer .card-footer{
 }
 
 .black,
-.black a{
+.black a
+{
+     
       background: var(--footer);
       color: white;    
+}
+.black a i {
+      position:absolute;
+      padding-left: 25px;
+      padding-right:20px;
 }
