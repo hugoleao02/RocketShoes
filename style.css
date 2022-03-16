@@ -1,165 +1,196 @@
-*{
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-      text-decoration: none;
-      
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 li {
-      list-style-type: none;
+  list-style-type: none;
 }
 
 :root {
-      --button: #FF0000;
-      --main-background:  #C4C4C4;
-      --background: #E5E5E5;
-      --text: #000;
-      --footer: #000;
-      --text-description: #9C9696;
+  --button: #ff0000;
+  --main-background: #c4c4c4;
+  --background: #e5e5e5;
+  --text: #000;
+  --footer: #000;
+  --text-description: #9c9696;
 }
 
-html{
-      background: var(--background);
-      font-family: 'Roboto', sans-serif;
-      color: var(--text);
-      
-}
+body {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to left, #e5e5e5 44%, transparent 50%,  #c4c4c4 56%, transparent 50%);
 
+  font-family: "Roboto", sans-serif;
+  color: var(--text);
+}
+.container {
+  width: 1140px;
+  margin: auto;
+}
 /*-------------- Menu --------------- */
-.menu{
-     position: absolute;      
-}   
-.menu ul{
-      display: flex;
-      justify-content: space-between; 
-      width: 77rem;
-      margin: 2.5rem 2.438rem;
+.header {
+  display: flex;
+  width: 1140px;
+  height: 100px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
 }
-.menu ul li{
-      font-size: 1.5rem ;
-      font-weight: 700;
-      align-items: center;
+.logo{
+      padding: 0;
+      margin: 0;
+      width: 52px;
+      height: 30px;
 }
-.menu ul li a{
-      color: var(--text);
+.menu ul {
+  display: flex;
+  align-items: center;
 }
-.menu ul li input{
-      padding-left: 35px;
-      border: none;
-      border-radius: 5px;
-      width: 13.75rem;
-      height: 2.2rem;
+.menu ul li { 
+  text-transform: uppercase;
+  font-weight: bold;
 }
-
-.busca i{
-      position: absolute;
-      padding:10px 5px;
-     
+.menu ul li a {
+  display: block;
+  padding: 15px 20px 15px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: var(--text);
 }
-
-/*--------------MAIN--------------- */
-#main{
-      display: flex;
-      justify-content: space-between;
-
+.menu ul li:last-child {
+  padding-left: 15px;
+  cursor: pointer;
 }
-
-/*--------------DESCRIÇÃO--------------- */
-#description{
-      width: 44%; 
-      height: 100vh;
+.menu ul li a:hover,
+.menu .active a {
+  background-color: var(--button);
+  color: white;
 }
-#description .content{
-      position: relative;
-      width: 22.313rem;
-      height: 33.313rem;
-      left:6rem;
-      top: 11.875rem;
-}
-#description .content h1{
-      font-size: 3.75rem;
-     
-}
-#description .content h2{
-      margin-top: 1rem;
-      font-size: 2.5rem;
-}
-#description .content p{
-      
-      font-size: 1rem;
-      line-height: 1rem;
-      color: var(--text-description);
-}
-#description .content button{
-      margin-top: 1rem;
-      border: none;
-      border-radius: 2px;
-      background: var(--button);
-      padding: 2rem 4rem 2rem 4rem;
-      color: white;    
-
-    
+.menu ul li input {
+  padding-left: 35px;
+  border: none;
+  border-radius: 5px;
+  width: 13.75rem;
+  height: 2.2rem;
 }
 
-/*--------------IMAGES--------------- */
-#image{
-      width: 56%;
-      background: var(--main-background);
+.busca i {
+  position: absolute;
+  padding: 7px 5px;
 }
 
-#image .preview .prevImg{
-      width: 552px;
-      margin-top: 8rem;
-      height: 405.82px;
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
-}
-/*---------CARDS--------------- */
-.cards{
-      width: 95%;
-      display: flex;
-      gap: 2rem;
-      margin-left:1rem;
-      margin-right:1rem;
-      margin-bottom: 1rem;
-}
+/*-------------- main--------------- */
+.main {
+  display: flex;
+  height:calc(100vh - 100px);
 
-#image .preview .cards .card img{
-    
+}
+.description {
+  flex: 1;
+  
+}
+.description .content {
+  width: 300px;
+  margin-top: 50px;
+}
+.description h1 {
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.description h2 {
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.description p {
+  font-size: 15px;
+  color: var(--text-description);
+  margin-bottom: 15px;
+}
+.description button {
+  border: 0;
+  padding: 20px 40px;
+  border-radius: 5px;
+  background-color: var(--button);
+  color: white;
+  cursor: pointer;
+}
+.preview{
+   width: 60%;
+ 
+}
+.preview .ampliado {
+      width: 500px;
+      height: auto;
+      margin-left: 150px;
+}
+.preview .ampliado img{
       width: 100%;
-      height: 100%;
+      height: 400px;
 }
-/*---------FOOTER--------------- */
-footer{
-      display: grid;
-      grid-template-columns:1fr 1fr 1fr 1fr 1fr 2fr;
-      align-items: center;
-      background: var(--background);  
-    
-}
-footer a{
+.cards{
+      display: flex;
+      margin-left: 100px;
      
-      padding: 4.396rem 3.8rem;
-      color: var(--text);
 }
-footer .card-footer{
-     
+.cards .card {
+      width: 200px;
+      margin-left: 20px;
+      height:70%;
+}
+.cards .card:first-child{
+      margin-left: 0;
+}
+.cards .card img{
+      width: 100% ;
+      height: 110px;
+}
+.cards .card.active img{
+      border-bottom: 2px solid var(--button);
+}
+/*-------------- Footer--------------- */
+.footer-area{
+      display: flex;
+      height: 150px;
+      margin: 0;
+      padding:0 ;
+}
+.card-footer{
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 0%;
-     
+
+      text-transform: uppercase;
+      font-size: 20px;
+      height: 100%;
+      width: 100%;
+}
+.card-footer:hover{
+      background-color: rgba(0,0,0,0.2);
+}
+.card-footer >img
+{
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      opacity: none;
+}
+.card-footer a{
+      display: block;
+      padding: 50px;
+      color: var(--text);
 }
 
-.black,
-.black a
-{
-     
-      background: var(--footer);
-      color: white;    
+.card-footer.dark a{
+      background-color: var(--footer);  
+      color: white;
+      padding-right: 100px; padding-left: 100px; 
 }
-.black a i {
-      position:absolute;
-      padding-left: 25px;
-      padding-right:20px;
+.card-footer.dark a i{
+      position: absolute;
+      margin-left: 10px;      
 }
